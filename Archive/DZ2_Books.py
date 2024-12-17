@@ -69,7 +69,7 @@ def data_collection(): #Функция сбора данных
     df.to_csv('books_data.csv', index=False) #Сохранение полученных данных в CSV файл
 
 #Бесконечный цикл с запуском в данное время
-schedule.every().day.at("21:06").do(data_collection)
+schedule.every().day.at("19:00").do(data_collection)
 #schedule.every(30).minutes.do(data_collection) 
 
 while True:
